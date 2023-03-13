@@ -19,6 +19,7 @@ depends: [
   "camlp5-buildscripts"
   "camlp5"      { >= "8.00.04" }
   "pa_ppx"      { >= "0.10" }
+  "pa_ppx_regexp"      { >= "0.01" }
   "not-ocamlfind" { >= "0.09" }
   "ounit" {with-test}
   "fmt"
