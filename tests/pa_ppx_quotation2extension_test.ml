@@ -8,6 +8,7 @@ let loc = Ploc.dummy
 let test_simple ctxt =
   ()
   ; assert_equal ~cmp:Reloc.eq_expr <:expr< 1 >> <:expr< 1 >>
+  ; assert_equal ~cmp:Reloc.eq_expr <:expr< 1 >> [%expr {| 1 |}]
 
 let suite = "Test pa_ppx_quotation2extension" >::: [
       "simple"   >:: test_simple
