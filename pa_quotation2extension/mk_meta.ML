@@ -14,13 +14,13 @@ Arg.(parse [
 
 Fmt.(pf stdout {|
 # Specifications for the "pa_ppx_quotation2extension" preprocessor:
-requires = "camlp5,fmt,pa_ppx.base,camlp5.parser_quotations,pa_ppx_regexp.runtime"
+requires = "camlp5,fmt,pa_ppx.base,camlp5.parser_quotations_base,pa_ppx_regexp.runtime"
 version = "%s"
 description = "pa_ppx_quotation2extension: pa_ppx_quotation2extension rewriter"
 
 # For linking
 package "link" (
-requires = "camlp5,fmt,pa_ppx.base.link,camlp5.parser_quotations.link,pa_ppx_regexp.runtime"
+requires = "camlp5,fmt,pa_ppx.base.link,camlp5.parser_quotations_base.link,pa_ppx_regexp.runtime"
 archive(byte) = "pa_ppx_quotation2extension.cmo"
 archive(native) = "pa_ppx_quotation2extension.cmx"
 )
@@ -29,7 +29,7 @@ archive(native) = "pa_ppx_quotation2extension.cmx"
 archive(byte,toploop) = "pa_ppx_quotation2extension.cmo"
 
   # For the preprocessor itself:
-  requires(syntax,preprocessor) = "camlp5,fmt,pa_ppx.base,camlp5.parser_quotations,pa_ppx_regexp.runtime"
+  requires(syntax,preprocessor) = "camlp5,fmt,pa_ppx.base,camlp5.parser_quotations_base,pa_ppx_regexp.runtime"
   archive(syntax,preprocessor,-native) = "pa_ppx_quotation2extension.cmo"
   archive(syntax,preprocessor,native) = "pa_ppx_quotation2extension.cmx"
 

@@ -1,4 +1,4 @@
-(**pp -syntax camlp5o *)
+(**pp -syntax camlp5o -package camlp5.parser_quotations *)
 open OUnit2
 
 let hd x = 2
