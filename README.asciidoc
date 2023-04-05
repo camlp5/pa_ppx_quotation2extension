@@ -1,5 +1,25 @@
-`pa_ppx_quotation2extension`: what it says on the tin
-=====================================================
+`pa_ppx_quotation2extension`: maps Camlp5 quotations to PPX extensions
+======================================================================
 :toc:
 :toc-placement: preamble
 
+This is a really small and simple PPX rewriter, that maps an extension like
+
+```
+[%foo {|...|}]
+```
+into a Camlp5 quotation
+```
+<:foo<...>>
+```
+
+and 
+```
+[%foo.loc {|...|}]
+```
+into
+```
+<:foo:<...>>
+```
+
+It depends on `pa_ppx_regexp`, or I'd just fold it into `pa_ppx`.
