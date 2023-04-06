@@ -2,7 +2,7 @@ WD=$(shell pwd)
 TOP=..
 include $(TOP)/config/Makefile.sub
 
-PACKAGES := $(PACKAGES),pa_ppx_quotation2extension,ounit,pa_ppx.utils
+PACKAGES := $(PACKAGES),pa_ppx_quotation2extension,ounit2,pa_ppx.utils
 
 ML= \
 	pa_ppx_quotation2extension_test.ml
