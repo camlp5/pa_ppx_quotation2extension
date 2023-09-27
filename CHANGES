@@ -1,4 +1,10 @@
 
+pa_ppx_quotation2extension Version 0.02
+---------------------------------------
+
+* [27 Sep 2023] update build to be compatible with latest camlp5-buildscripts
+
+
 pa_ppx_quotation2extension Version 0.01
 ---------------------------------------
 
