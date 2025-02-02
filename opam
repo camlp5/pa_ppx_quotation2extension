@@ -1,4 +1,4 @@
-version: "0.02"
+version: "0.03"
 synopsis: "A Camlp5 PPX Rewriter for treating PPX extensions as Camlp5 quotations  "
 description:
 """
