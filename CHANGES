@@ -1,3 +1,7 @@
+pa_ppx_quotation2extension Version 8.05.01
+------------------------------------------
+
+* [14 May 2026] sync config/Makefiles across pa_ppx* packages
 
 pa_ppx_quotation2extension Version 0.03
 ---------------------------------------
