@@ -9,7 +9,7 @@ open Pa_passthru
 open Ppxutil
 
 let has_quotation ename =
-  match Quotation.find ename with
+  match Pcaml.QH.find ename with
       _ -> true
     | exception Not_found -> false
 
